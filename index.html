@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cardgame</title>
+    <script src="./script/script.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div id="startScreen">
+        <img src="./img/header.png">
+
+        <div id="enterName">
+            <input type="text" id="username" placeholder="Enter Your Name">
+            <div id="submitName"><i class="fa fa-arrow-right"></i></div>
+        </div>
+        <p id="nameWarning"><i class="fa fa-info-circle"></i> Please enter a name</p>
+    </div>
+
+    <div id="gameScreen">
+        <div id="names">
+            <div id="info">
+
+            </div>
+
+        </div>
+        <div id="gameBoard">
+            <div id="startGame">Start Game</div>
+            <p id="userWarning"><i class="fa fa-info-circle"></i> You'll need more players to play this game!</p>
+            <div id="black">
+                <img id="givenCard" src="./img/back.png">
+                <img id="laidCard" src="./img/empty.png">
+                <div id="candidateCards"></div>
+                <img id="change" src="./img/change.png">
+            </div>
+            <div id="confirmSelection">Confirm Selection</div>
+        </div>
+        <div id="cards">
+            <img src="./img/back.png" class="handCards">
+            <img src="./img/back.png" class="handCards">
+            <img src="./img/back.png" class="handCards">
+            <img src="./img/back.png" class="handCards">
+            <img src="./img/back.png" class="handCards">
+            <img src="./img/back.png" class="handCards">
+            <img src="./img/back.png" class="handCards">
+
+        </div>
+    </div>
+</body>
+</html>

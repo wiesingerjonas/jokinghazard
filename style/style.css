@@ -1,0 +1,184 @@
+body {
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+    overflow: hidden;
+    touch-action: none;
+
+}
+
+/*region Style for Start Screen*/
+
+#startScreen {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    vertical-align: center;
+    position: absolute;
+    z-index: 100000;
+}
+#startScreen img {
+    width: 40vw;
+}
+#startScreen #enterName {
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+}
+#startScreen #enterName #username {
+    width: 20vw;
+    outline: none;
+    padding: 2vh 1vw;
+    border: 2px solid grey;
+    border-right: none;
+}
+#startScreen #enterName #submitName {
+    width: 5vw;
+    background-color: #429f44;
+    color: white;
+    text-align: center;
+    padding: 2vh 2vw;
+}
+#startScreen #nameWarning {
+    color: red;
+    text-align: left;
+    width: 31vw;
+    display: none;
+}
+/*endregion*/
+
+/*region Style for Game Screen*/
+#gameScreen {
+    width: 100vw;
+    height: 100vh;
+    user-select: none;
+    display: flex;
+    z-index: 50;
+}
+
+/*region names*/
+#gameScreen #names {
+    background-image: linear-gradient(lightgray, #c0c0c0);
+    height: 100vh;
+    width: 15vw;
+    padding: 1vh 0 0 1vw;
+}
+#gameScreen #names #info {
+    background-color: #b0b0b0;
+    margin: -1vh 0 0 -1vw;
+    height: 5vh;
+}
+#gameScreen #names .nameBox {
+    background-color: #e0e0e0;
+    font-size: 3vh;
+    margin: 1vh 0;
+    padding: 0 .5vw;
+    border-left: 0.25vw solid #b0b0b0;
+    color: #252525;
+}
+#gameScreen #names p {
+    display: inline;
+}
+/*endregion*/
+
+/*region gameboard*/
+#gameScreen #gameBoard {
+    width: 85vw;
+    height: 70vh;
+}
+#gameScreen #gameBoard #startGame {
+    min-width: 16vw;
+    height: 10vh;
+    width: 80%;
+    background-color: #429f44;
+    color: white;
+    font-size: 5vh;
+    text-align: center;
+    padding-top: 3vh;
+    margin: auto;
+    margin-top: 25vh;
+}
+#gameScreen #gameBoard #userWarning {
+    color: red;
+    text-align: center;
+    width: 85vw;
+    display: none;
+}
+#gameScreen #gameBoard #black {
+    display: none;
+}
+
+#gameScreen #gameBoard #black #givenCard, #gameScreen #gameBoard #black #laidCard {
+    height: 30vh;
+    margin: 20vh 0 0 5vw;
+}
+#gameScreen #gameBoard #black #change {
+    height: 10vh;
+    margin: 2vh 0 0 10vw;
+    display: none;
+}
+
+#gameScreen #gameBoard #black #candidateCards {
+    height: 70vh;
+    background-color: lightgray;
+    width: 50vw;
+    display: inline-block;
+    float: right;
+    overflow-y: auto;
+    border-bottom: 2px solid white;
+    box-sizing: border-box;
+}
+#gameScreen #gameBoard #black #candidateCards img {
+    height: 24vh;
+    margin: 3vh 1vw;
+}
+@media screen and (max-width: 1640px) {
+    #gameScreen #gameBoard #black #candidateCards {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1225px) {
+    #gameScreen #gameBoard #black #candidateCards {
+        width: 40%;
+    }
+}
+#gameScreen #gameBoard #confirmSelection {
+    margin-top: -7vh;
+    height: 5vh;
+    white-space:nowrap;
+    width: min-content;
+    padding: 1vh 1vw 0 1vw;
+    background-color: #429f44;
+    color: white;
+    font-size: 3vh;
+    display: none;
+}
+#gameScreen #gameBoard #confirmSelection:hover {
+    cursor: pointer;
+}
+/*endregion*/
+
+/*region cards*/
+#gameScreen #cards {
+    height: 30vh;
+    width: 84vw;
+    margin: 70vh 0 0 16vw;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    background-color: #b0b0b0;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#gameScreen #cards img {
+    height: 24vh;
+    width: auto;
+    margin: 3vh 1vw;
+}
+/*endregion*/
+/*endregion*/
