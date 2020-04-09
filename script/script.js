@@ -70,9 +70,9 @@ window.addEventListener("load", () => {
     }
 
     //region testTrigger
-    username.value = "Jonas";
-    submitName.click();
-    startGame.click();
+    //username.value = "Jonas";
+    //submitName.click();
+    //startGame.click();
     //endregion
 });
 
