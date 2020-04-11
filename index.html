@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Cardgame</title>
+    <link rel="icon" type="image/png" href="./img/icon.png"/>
+
     <script src="./script/script.js"></script>
+    <script src="./script/initialize.js"></script>
 
     <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,8 +40,9 @@
                 <img id="laidCard" src="./img/empty.png">
                 <div id="candidateCards"></div>
                 <img id="change" src="./img/change.png">
+                <div id="confirmSelection">Confirm Selection</div>
+                <div id="continue">Continue</div>
             </div>
-            <div id="confirmSelection">Confirm Selection</div>
         </div>
         <div id="cards">
             <img src="./img/back.png" class="handCards">
@@ -49,7 +52,6 @@
             <img src="./img/back.png" class="handCards">
             <img src="./img/back.png" class="handCards">
             <img src="./img/back.png" class="handCards">
-
         </div>
     </div>
 </body>
